@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /shopping/
+
+Sitemap: https://mithranphotoclickz.com/sitemap.xml

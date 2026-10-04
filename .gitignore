@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Original Archives (Do not commit to repo)
+/Photos/
+Mithran_Photo_Clickz_Final_Customized_Gifts_Catalogue.pdf
+all_products_raw.json
+extract_products.py
+generate_ts.py
