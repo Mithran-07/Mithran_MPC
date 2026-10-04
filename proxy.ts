@@ -31,7 +31,8 @@ export default function proxy(request: NextRequest) {
     }
 
     const authValue = authHeader.split(' ')[1];
-    const [user, pwd] = Buffer.from(authValue, 'base64').toString().split(':');
+    const decodedValue = atob(authValue);
+    const [user, pwd] = decodedValue.split(':');
 
     // Default to 'mithranadmin' if no env is set for safety in development
     const expectedPassword = process.env.ADMIN_PASSWORD || 'mithranadmin';
