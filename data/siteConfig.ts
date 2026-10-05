@@ -35,7 +35,7 @@ export const siteConfig = {
     showFeaturedStory: true,
     showFilmsPreview: false,
     showClientStories: false,
-    showLeadershipPortrait: false,
+    showLeadershipPortrait: true,
   },
   navigation: [
     { label: 'Work', href: '/work' },

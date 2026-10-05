@@ -30,33 +30,45 @@ export default function StudioPage() {
         </div>
       </section>
 
-      {/* Leadership &amp; Physical Studio Overview */}
+      {/* The Founder &amp; Studio Foundation */}
       <section className="py-24 md:py-32 bg-bg-primary border-b border-white/5">
         <div className="mx-auto max-w-[1200px] px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            <div className="lg:col-span-5 space-y-6">
-              {siteConfig.features.showLeadershipPortrait && (
-                <div className="relative aspect-[3/4] w-full bg-dark-gray overflow-hidden">
-                  <Image
-                    src="/images/studio/studio-interior-02.jpg"
-                    alt="Lion B. Anand Kumar"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 42vw"
-                    className="object-cover object-center"
-                  />
-                </div>
-              )}
-              <div className="pt-2">
-                <p className="font-playfair text-2xl text-warm-white">{siteConfig.proprietor}</p>
-                <p className="font-manrope text-[12px] uppercase tracking-[0.15em] text-gold mt-1">Proprietor &amp; Creative Lead</p>
+            {/* Founder Portrait */}
+            <div className="lg:col-span-5 space-y-4">
+              <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none bg-dark-gray overflow-hidden border border-white/10 shadow-2xl">
+                <Image
+                  src="/images/studio/founder-lion-b-anand-kumar.jpg"
+                  alt="Anand Kumar, proprietor of MITHRAN PHOTO CLICKZ"
+                  fill
+                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 38vw"
+                  className="object-cover object-[center_15%]"
+                  priority
+                />
+                <div className="absolute inset-0 ring-1 ring-inset ring-gold/15 pointer-events-none" />
+              </div>
+              <div className="pt-1 flex items-center justify-between text-muted font-manrope text-xs">
+                <span className="uppercase tracking-[0.2em] text-[11px] text-gold/90 font-medium">Founder &amp; Proprietor</span>
+                <span>Chennai Studio</span>
               </div>
             </div>
 
-            <div className="lg:col-span-7 space-y-8">
-              <SectionLabel>Our Foundation</SectionLabel>
-              <h2 className="font-playfair text-3xl md:text-4xl text-warm-white leading-snug">
-                Preserving life&apos;s most meaningful milestones with cinematic clarity.
-              </h2>
+            {/* Founder Story & Studio Foundation */}
+            <div className="lg:col-span-7 space-y-6">
+              <div>
+                <SectionLabel>The Founder · Our Story</SectionLabel>
+                <h2 className="mt-4 font-playfair text-3xl md:text-5xl text-warm-white leading-tight">
+                  Lion B. Anand Kumar
+                </h2>
+                <p className="mt-2 font-manrope text-xs md:text-sm uppercase tracking-[0.2em] text-gold font-medium">
+                  Proprietor, MITHRAN PHOTO CLICKZ
+                </p>
+              </div>
+
+              <div className="pt-2">
+                <GoldDivider width="small" />
+              </div>
+
               {/* 
                 TODO FOR OWNER CONFIRMATION:
                 Please confirm the following capabilities and service coverage before expanding this copy:
@@ -65,20 +77,16 @@ export default function StudioPage() {
                 3. "major cultural celebrations across Chennai"
                 4. "Tamil Nadu and South India" booking availability
               */}
-              <div className="space-y-6 text-muted font-manrope text-base leading-relaxed">
+              <div className="space-y-5 text-muted font-manrope text-base leading-relaxed pt-2">
                 <p>
-                  MITHRAN PHOTO CLICKZ was established with a singular vision: to bring cinematic storytelling and uncompromising visual quality to weddings, portraits, and photography services in Chennai.
+                  MITHRAN PHOTO CLICKZ was established under the leadership of Lion B. Anand Kumar with a singular commitment: to bring cinematic storytelling, artistic discipline, and uncompromising visual quality to weddings, portraits, and celebrations in Chennai.
                 </p>
                 <p>
-                  Located in Old Perungalathur / Tambaram, our physical studio serves as the creative workshop where every production is planned, shot, color-graded, and finalized.
+                  Located in Old Perungalathur / Tambaram, our physical studio serves as the creative workshop where every photography and film production is planned, captured, color-graded, and finished.
                 </p>
                 <p>
-                  We approach every assignment with technical precision, attention to detail, and genuine emotional resonance.
+                  We approach every assignment with technical precision, attention to craft, and genuine emotional resonance—preserving life&apos;s most meaningful milestones with timeless clarity.
                 </p>
-              </div>
-
-              <div className="pt-4">
-                <GoldDivider width="medium" />
               </div>
             </div>
           </div>

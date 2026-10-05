@@ -23,6 +23,15 @@ export const metadata: Metadata = {
     description:
       'Photography and visual production studio in Chennai.',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '512x512' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   robots: {
     index: true,
     follow: true,
@@ -54,6 +63,8 @@ export default function RootLayout({
     founder: {
       '@type': 'Person',
       name: 'Lion B. Anand Kumar',
+      jobTitle: 'Proprietor',
+      image: `${siteConfig.seo.url}/images/studio/founder-lion-b-anand-kumar.jpg`,
     },
     priceRange: '₹₹₹',
     areaServed: ['Chennai', 'Tambaram', 'Old Perungalathur', 'Tamil Nadu', 'India'],
